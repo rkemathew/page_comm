@@ -1,0 +1,18 @@
+{
+  "name": "page_comm",
+  "version": "1.0.0",
+  "description": "Testing page to page communication",
+  "main": "index.html",
+  "dependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>Test Second Page</title>
+</head>
+  <script>
+    window.onstorage = message_receive;
+
+  	function message_receive(ev) {
+      if (ev.key != 'message') {
+          return;
+      }
+
+      var message = JSON.parse(ev.newValue);
+      if (!message) {
+          return;
+      }
+
+      if (message.command == 'doit') {
+          alert(message.data);
+      }
+  	}
+  </script>
+</head>
+<body>
+  <h3>This is the second page receives the messages</h3>
+</body>
+</html>

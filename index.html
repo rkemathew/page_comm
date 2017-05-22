@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>Test First Page</title>
+</head>
+</head>
+<script>
+    function message_broadcast(message) {
+		setTimeout(function() {
+      console.log('About to write to local storage');
+			localStorage.setItem('message', JSON.stringify(message));
+			localStorage.removeItem('message');
+		}, 2000);
+	}
+
+	message_broadcast({
+    "command": "doit",
+		"data": "Test Message"
+	});
+</script>
+<body>
+  <h3>This is the first page that sets the local storage value</h3>
+</body>
+</html>
